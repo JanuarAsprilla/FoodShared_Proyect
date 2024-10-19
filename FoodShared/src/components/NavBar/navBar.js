@@ -48,6 +48,7 @@ const LinksNav = styled.a`
   text-decoration: none;
   color: #002d07;
   font-weight: bold;
+  transition: all 0.3s ease;
 
   &:hover {
     color: #006510;
@@ -71,6 +72,8 @@ const Button = styled.a`
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+
   &:hover {
     background-color: #3a3830;
     text-decoration: none;

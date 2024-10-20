@@ -351,6 +351,26 @@ const BodyStart = () => {
                 60% de su potencial.
               </Paragraphs>
             </Box>
+            <Box display="grid" gridTemplateRows="auto auto">
+              <Box
+                margin="50px 10px"
+                display="grid"
+                gridTemplateRows="repeat(3, auto)"
+                width="510px"
+              >
+                <Box>
+                  <LogoImage
+                    src="src/assets/img/KitsAlimentos.jpg"
+                    width="400"
+                    height="190px"
+                    alt="Restaurante el Tablazo"
+                  />
+                </Box>
+                <Heading level={2}>
+                  La desnutrición infantil: una crisis silenciosa
+                </Heading>
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>

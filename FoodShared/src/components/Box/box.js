@@ -35,6 +35,22 @@ const BoxContainer = styled.div`
   border-right: ${(props) => props.borderRight};
   border-bottom: ${(props) => props.borderBottom};
   border-left: ${(props) => props.borderLeft};
+  &:hover {
+    box-shadow: ${(props) => props.hoverBoxShadow};
+    background-color: ${(props) => props.hoverBackgroundColor};
+    color: ${(props) => props.hoverColor};
+    border-top: ${(props) => props.hoverBorderTop};
+    border-right: ${(props) => props.hoverBorderRight};
+    border-bottom: ${(props) => props.hoverBorderBottom};
+    border-left: ${(props) => props.hoverBorderLeft};
+    opacity: ${(props) => props.hoverOpacity};
+    cursor: ${(props) => props.hoverCursor};
+    transition: ${(props) => props.hoverTransition};
+    transform: ${(props) => props.hoverTransform};
+    z-index: ${(props) => props.hoverZIndex};
+    border-radius: ${(props) => props.hoverBorderRadius};
+    border: ${(props) => props.hoverBorder};
+  }
 `
 
 export { BoxContainer }

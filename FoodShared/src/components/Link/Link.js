@@ -1,7 +1,8 @@
 // LinkStyles.js
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-const StyledLink = styled.a`
+const StyledLinks = styled(Link)`
   text-decoration: ${(props) => props.textDecoration};
   color: ${(props) => props.color};
   font-size: ${(props) => props.fontSize || '1rem'};
@@ -21,4 +22,4 @@ const StyledLink = styled.a`
   }
 `
 
-export { StyledLink }
+export { StyledLinks }

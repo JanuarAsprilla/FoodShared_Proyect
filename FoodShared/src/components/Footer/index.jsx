@@ -2,9 +2,43 @@ import Box from '../Box'
 import Image from '../ImageComponent'
 import Heading from '../Heading'
 import Paragraphs from '../Paragraph'
-import Link from '../Link'
+import Links from '../Link'
 
 function Footer() {
+  const footerLinks = [
+    {
+      to: '/',
+      label: 'Inicio',
+    },
+    {
+      to: '#',
+      label: 'Donar Alimento',
+    },
+    {
+      to: '#',
+      label: 'Solicitar Alimentos',
+    },
+    {
+      to: '#',
+      label: 'Sobre Nosotros',
+    },
+    { to: '/contactanos', label: 'Contactanos' },
+  ]
+
+  const renderFooterLinks = footerLinks.map((link, index) => (
+    <Links
+      key={index}
+      to={link.to}
+      fontSize="17px"
+      fontWeight="bold"
+      color="#000000"
+      textDecoration="none"
+      hoverColor="#656565"
+    >
+      {link.label}
+    </Links>
+  ))
+
   return (
     <>
       <Box
@@ -29,7 +63,7 @@ function Footer() {
             gap="5px"
             width="250px"
           >
-            <Link href="/">
+            <Links to="/">
               <Image
                 src="src/assets/img/logoSinNombre.jpeg"
                 alt="logo FoodShared"
@@ -37,7 +71,7 @@ function Footer() {
                 height="100px"
                 borderRadius="50%"
               />
-            </Link>
+            </Links>
             <Heading
               level={2}
               fontWeight="bold"
@@ -75,48 +109,48 @@ function Footer() {
             Nos encuentras en:
           </Heading>
           <Box display="grid" gridTemplateColumns="auto auto auto" gap="30px">
-            <Link href={'www.facebook.com'}>
+            <Links to={'www.facebook.com'}>
               <Image
                 src="src/assets/img/facebook.png"
                 alt="logo facebook"
                 width="60px"
                 height="60px"
               />
-            </Link>
-            <Link href={'www.instagram.com'}>
+            </Links>
+            <Links to={'www.instagram.com'}>
               <Image
                 src="src/assets/img/instagram.png"
                 alt="logo instagram"
                 width="60px"
                 height="60px"
               />
-            </Link>
-            <Link href={'www.youtube.com'}>
+            </Links>
+            <Links to={'www.youtube.com'}>
               <Image
                 src="src/assets/img/youtube.png"
                 alt="logo Youtube"
                 width="60px"
                 height="60px"
               />
-            </Link>
+            </Links>
           </Box>
           <Box display="grid" gridTemplateColumns="auto auto" gap="30px">
-            <Link href={'www.gmail.com'}>
+            <Links to={'www.gmail.com'}>
               <Image
                 src="src/assets/img/correoElectronico.png"
                 alt="logo Gmail"
                 width="60px"
                 height="60px"
               />
-            </Link>
-            <Link href={'www.x.com'}>
+            </Links>
+            <Links to={'www.x.com'}>
               <Image
                 src="src/assets/img/X.png"
                 alt="logo X"
                 width="60px"
                 height="60px"
               />
-            </Link>
+            </Links>
           </Box>
         </Box>
         <Box
@@ -125,56 +159,7 @@ function Footer() {
           gap="20px"
           gridTemplateRows="repeat(5, 1fr)"
         >
-          <Link
-            href="#"
-            fontSize="17px"
-            fontWeight="bold"
-            color="#000000"
-            textDecoration="none"
-            hoverColor="#656565"
-          >
-            Inicio
-          </Link>
-          <Link
-            href="#"
-            fontSize="17px"
-            fontWeight="bold"
-            color="#000000"
-            textDecoration="none"
-            hoverColor="#656565"
-          >
-            Donar Alimento
-          </Link>
-          <Link
-            href="#"
-            fontSize="17px"
-            fontWeight="bold"
-            color="#000000"
-            textDecoration="none"
-            hoverColor="#656565"
-          >
-            Solicitar Alimentos
-          </Link>
-          <Link
-            href="#"
-            fontSize="17px"
-            fontWeight="bold"
-            color="#000000"
-            textDecoration="none"
-            hoverColor="#656565"
-          >
-            Sobre Nosotros
-          </Link>
-          <Link
-            href="#"
-            fontSize="17px"
-            fontWeight="bold"
-            color="#000000"
-            textDecoration="none"
-            hoverColor="#656565"
-          >
-            Contactanos
-          </Link>
+          {renderFooterLinks}
         </Box>
       </Box>
     </>

@@ -1,10 +1,18 @@
-import './App.css'
-import PageHome from './pages/Home'
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
+import PageHome from './pages/Home'
+import Contacts from './pages/Contacts'
+import './App.css'
 function App() {
   return (
     <>
-      <PageHome />
+      <Router>
+        <Routes>
+          <Route path="/" element={<PageHome />} />
+          <Route path="/contactanos" element={<Contacts />} />
+        </Routes>
+      </Router>
     </>
   )
 }

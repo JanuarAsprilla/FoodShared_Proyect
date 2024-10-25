@@ -1,11 +1,12 @@
-import { StyledLink } from './Link'
+import { Link } from 'react-router-dom'
+import { StyledLinks } from './Link'
 
-const Link = ({ href, children, ...props }) => {
+const Links = ({ to, children, ...props }) => {
   return (
-    <StyledLink href={href} {...props}>
+    <StyledLinks as={Link} to={to} {...props}>
       {children}
-    </StyledLink>
+    </StyledLinks>
   )
 }
 
-export default Link
+export default Links

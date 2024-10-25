@@ -1,9 +1,38 @@
 import React from 'react'
 import Box from '../Box'
-import Link from '../Link'
+import Links from '../Link'
 import LogoImage from '../ImageComponent'
 
 const NavBar = () => {
+  const navLinks = [
+    { to: '/', label: 'Inicio' },
+    { to: '#', label: 'Donar Alimento' },
+    { to: '#', label: 'Solicitar Alimentos' },
+    { to: '#', label: 'Sobre Nosotros' },
+    { to: '/contactanos', label: 'Contactanos' },
+  ]
+
+  const renderNavLinks = navLinks.map((link, index) => (
+    <Box
+      key={index}
+      padding="2px 25px"
+      transition="all 0.3s ease"
+      hoverBackgroundColor="#dcdcdc"
+      borderRadius="5px"
+    >
+      <Links
+        to={link.to}
+        fontSize="14px"
+        fontWeight="bold"
+        color="#002d07"
+        textDecoration="none"
+        hoverColor="#006510"
+      >
+        {link.label}
+      </Links>
+    </Box>
+  ))
+
   return (
     <Box
       backgroundColor="#F0F0E9"
@@ -11,7 +40,6 @@ const NavBar = () => {
       padding="0 10px"
       gap="10px"
       alignItems="center"
-      alignContent="center"
       display="grid"
       gridTemplateColumns="auto 1fr auto"
       position="sticky"
@@ -19,137 +47,46 @@ const NavBar = () => {
       zIndex="1"
       boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
     >
-      <Box
-        display="flex"
-        alignItems="center"
-        alignContent="center"
-        justifyContent="center"
-        height="50px"
-        gap="5px"
-      >
-        <LogoImage
-          src="src/assets/img/logo.jpeg"
-          alt="logo FoodShared"
-          href="/"
-          width="50px"
-          height="50px"
-          borderRadius="50%"
-        />
-        <Link
-          href="/"
+      <Box display="flex" alignItems="center" height="50px" gap="5px">
+        <Links to="/">
+          <LogoImage
+            src="src/assets/img/logo.jpeg"
+            alt="logo FoodShared"
+            width="50px"
+            height="50px"
+            borderRadius="50%"
+          />
+        </Links>
+        <Links
+          to="/"
           fontSize="15px"
           fontWeight="900"
           color="#002d07"
           textDecoration="none"
         >
           FoodShared
-        </Link>
+        </Links>
       </Box>
       <Box
         display="flex"
         gap="10px"
         alignItems="center"
-        alignContent="center"
         padding="0 10px"
         justifyContent="center"
       >
-        <Box
-          padding=" 2px 25px"
-          transition="all 0.3s ease"
-          hoverBackgroundColor="#dcdcdc"
-          borderRadius="5px"
-        >
-          <Link
-            href="#"
-            fontSize="14px"
-            fontWeight="bold"
-            color="#002d07"
-            textDecoration="none"
-            hoverColor="#006510"
-          >
-            Inicio
-          </Link>
-        </Box>
-        <Box
-          padding=" 2px 25px"
-          transition="all 0.3s ease"
-          hoverBackgroundColor="#dcdcdc"
-          borderRadius="5px"
-        >
-          <Link
-            href="#"
-            fontSize="14px"
-            fontWeight="bold"
-            color="#002d07"
-            textDecoration="none"
-            hoverColor="#006510"
-          >
-            Donar Alimento
-          </Link>
-        </Box>
-        <Box
-          padding=" 2px 25px"
-          transition="all 0.3s ease"
-          hoverBackgroundColor="#dcdcdc"
-          borderRadius="5px"
-        >
-          <Link
-            href="#"
-            fontSize="14px"
-            fontWeight="bold"
-            color="#002d07"
-            textDecoration="none"
-            hoverColor="#006510"
-          >
-            Solicitar Alimentos
-          </Link>
-        </Box>
-        <Box
-          padding=" 2px 25px"
-          transition="all 0.3s ease"
-          hoverBackgroundColor="#dcdcdc"
-          borderRadius="5px"
-        >
-          <Link
-            href="#"
-            fontSize="14px"
-            fontWeight="bold"
-            color="#002d07"
-            textDecoration="none"
-            hoverColor="#006510"
-          >
-            Sobre Nosotros
-          </Link>
-        </Box>
-        <Box
-          padding=" 2px 25px"
-          transition="all 0.3s ease"
-          hoverBackgroundColor="#dcdcdc"
-          borderRadius="5px"
-        >
-          <Link
-            href="#"
-            fontSize="14px"
-            fontWeight="bold"
-            color="#002d07"
-            textDecoration="none"
-            hoverColor="#006510"
-          >
-            Contactanos
-          </Link>
-        </Box>
+        {renderNavLinks}
       </Box>
       <Box display="flex" gap="5px" alignItems="center">
         <Box
-          padding=" 10px "
+          padding="10px"
           backgroundColor="#696558"
           borderRadius="15px"
           cursor="pointer"
           transition="all 0.3s ease"
           hoverBackgroundColor="#3a3830"
         >
-          <Link
-            href="#"
+          <Links
+            to="#"
             fontSize="12px"
             fontWeight="bold"
             color="white"
@@ -157,27 +94,27 @@ const NavBar = () => {
             padding="2px 13px"
           >
             INICIAR SESIÓN
-          </Link>
+          </Links>
         </Box>
         <Box
-          padding=" 10px "
+          padding="10px"
           backgroundColor="#002d07"
           borderRadius="15px"
           cursor="pointer"
           transition="all 0.3s ease"
-          hoverBackgroundColor=" #dcdcdc"
+          hoverBackgroundColor="#dcdcdc"
         >
-          <Link
-            href="#"
+          <Links
+            to="#"
             fontSize="12px"
             fontWeight="bold"
             color="#ffffff"
             textDecoration="none"
-            hoverColor=" #002d07"
+            hoverColor="#002d07"
             padding="2px 13px"
           >
             REGISTRARSE
-          </Link>
+          </Links>
         </Box>
       </Box>
     </Box>

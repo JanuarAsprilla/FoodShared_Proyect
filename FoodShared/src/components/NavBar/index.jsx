@@ -8,7 +8,7 @@ const NavBar = () => {
     { to: '/', label: 'Inicio' },
     { to: '#', label: 'Donar Alimento' },
     { to: '#', label: 'Solicitar Alimentos' },
-    { to: '#', label: 'Sobre Nosotros' },
+    { to: '/Sobre_Nosotros', label: 'Sobre Nosotros' },
     { to: '/contactanos', label: 'Contactanos' },
   ]
 

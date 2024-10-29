@@ -19,7 +19,7 @@ function Footer() {
       label: 'Solicitar Alimentos',
     },
     {
-      to: '#',
+      to: '/Sobre_Nosotros',
       label: 'Sobre Nosotros',
     },
     { to: '/contactanos', label: 'Contactanos' },

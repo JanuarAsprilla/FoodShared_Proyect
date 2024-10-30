@@ -8,7 +8,7 @@ const NavBar = () => {
     { to: '/', label: 'Inicio' },
     { to: '#', label: 'Donar Alimento' },
     { to: '#', label: 'Solicitar Alimentos' },
-    { to: '#', label: 'Sobre Nosotros' },
+    { to: '/Sobre_Nosotros', label: 'Sobre Nosotros' },
     { to: '/contactanos', label: 'Contactanos' },
   ]
 
@@ -91,27 +91,27 @@ const NavBar = () => {
             fontWeight="bold"
             color="white"
             textDecoration="none"
-            padding="2px 13px"
+            padding="13px"
           >
             INICIAR SESIÓN
           </Links>
         </Box>
         <Box
           padding="10px"
-          backgroundColor="#002d07"
           borderRadius="15px"
           cursor="pointer"
           transition="all 0.3s ease"
-          hoverBackgroundColor="#dcdcdc"
+          backgroundColor="#4b8b00"
+          hoverBackgroundColor="#355c0b"
         >
           <Links
             to="#"
             fontSize="12px"
             fontWeight="bold"
             color="#ffffff"
+            hoverColor="#fffaf2"
             textDecoration="none"
-            hoverColor="#002d07"
-            padding="2px 13px"
+            padding="13px"
           >
             REGISTRARSE
           </Links>

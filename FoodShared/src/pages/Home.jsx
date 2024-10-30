@@ -7,6 +7,7 @@ import Box from '../components/Box'
 import Link from '../components/Link'
 import Footer from '../components/Footer'
 import Button from '../components/Button'
+import Links from '../components/Link'
 function PageHome() {
   return (
     <>
@@ -67,20 +68,26 @@ function PageHome() {
               </Paragraphs>
             </Box>
 
-            <Box display="flex" justifyContent="center">
-              <Button
+            <Box
+              margin="10px auto"
+              borderRadius="30px"
+              padding=" 14px"
+              textAlign="center"
+              backgroundColor="#4b8b00"
+              hoverBackgroundColor="#355c0b"
+              transition="all 0.3s ease"
+            >
+              <Links
+                to="/donar"
                 fontSize="20px"
                 color="#ffffff"
+                hoverColor="#fffaf2"
                 fontWeight="bold"
-                backgroundColor="#4b8b00"
-                borderRadius="30px"
-                padding=" 12px"
-                textAlign="center"
-                hoverBackgroundColor="#dcdcdc"
-                hoverColor="#002d07"
+                textDecoration="none"
+                padding=" 10px"
               >
                 Dona Ahora
-              </Button>
+              </Links>
             </Box>
           </Box>
         </Box>
@@ -122,20 +129,27 @@ function PageHome() {
               </Paragraphs>
             </Box>
 
-            <Box display="flex" justifyContent="left">
-              <Button
+            <Box
+              width="150px"
+              margin="10px 0"
+              borderRadius="30px"
+              padding=" 10px"
+              textAlign="center"
+              backgroundColor="#4b8b00"
+              hoverBackgroundColor="#355c0b"
+              transition="all 0.3s ease"
+            >
+              <Links
+                to="/Sobre_Nosotros"
                 fontSize="20px"
                 color="#ffffff"
+                hoverColor="#fffaf2"
                 fontWeight="bold"
-                backgroundColor="#4b8b00"
-                borderRadius="30px"
-                padding=" 12px"
-                textAlign="center"
-                hoverBackgroundColor="#dcdcdc"
-                hoverColor="#002d07"
+                textDecoration="none"
+                padding=" 10px"
               >
-                Saber Más
-              </Button>
+                Saber Mas...
+              </Links>
             </Box>
           </Box>
           <Box
@@ -167,20 +181,26 @@ function PageHome() {
                 </Heading>
               </Box>
 
-              <Box display="flex" justifyContent="center">
-                <Button
+              <Box
+                margin="5px auto"
+                backgroundColor="#ce8600"
+                borderRadius="30px"
+                padding=" 8px 20px "
+                textAlign="center"
+                hoverBackgroundColor="#874a0c"
+                transition="all 0.3s ease"
+              >
+                <Links
+                  to="#"
                   fontSize="18px"
-                  color="#ffffff"
                   fontWeight="bold"
-                  backgroundColor="#ce8600"
-                  borderRadius="30px"
-                  padding=" 8px 20px "
-                  textAlign="center"
-                  hoverBackgroundColor="#dcdcdc"
-                  hoverColor="#885800"
+                  color="#ffffff"
+                  padding=" 10px"
+                  hoverColor="#fffaf2"
+                  textDecoration="none"
                 >
                   Saber Más
-                </Button>
+                </Links>
               </Box>
             </Box>
             <Box
@@ -204,20 +224,26 @@ function PageHome() {
                 </Heading>
               </Box>
 
-              <Box display="flex" justifyContent="center">
-                <Button
+              <Box
+                margin="5px auto"
+                backgroundColor="#ce8600"
+                borderRadius="30px"
+                padding=" 8px 20px "
+                textAlign="center"
+                hoverBackgroundColor="#874a0c"
+                transition="all 0.3s ease"
+              >
+                <Links
+                  to="#"
                   fontSize="18px"
-                  color="#ffffff"
                   fontWeight="bold"
-                  backgroundColor="#ce8600"
-                  borderRadius="30px"
-                  padding=" 8px 20px "
-                  textAlign="center"
-                  hoverBackgroundColor="#dcdcdc"
-                  hoverColor="#885800"
+                  color="#ffffff"
+                  padding=" 10px"
+                  hoverColor="#fffaf2"
+                  textDecoration="none"
                 >
                   Saber Más
-                </Button>
+                </Links>
               </Box>
             </Box>
             <Box
@@ -241,20 +267,26 @@ function PageHome() {
                 </Heading>
               </Box>
 
-              <Box display="flex" justifyContent="center">
-                <Button
+              <Box
+                margin="5px auto"
+                backgroundColor="#ce8600"
+                borderRadius="30px"
+                padding=" 8px 20px "
+                textAlign="center"
+                hoverBackgroundColor="#874a0c"
+                transition="all 0.3s ease"
+              >
+                <Links
+                  to="#"
                   fontSize="18px"
-                  color="#ffffff"
+                  padding=" 10px"
                   fontWeight="bold"
-                  backgroundColor="#ce8600"
-                  borderRadius="30px"
-                  padding=" 8px 20px "
-                  textAlign="center"
-                  hoverBackgroundColor="#dcdcdc"
-                  hoverColor="#885800"
+                  color="#ffffff"
+                  hoverColor="#fffaf2"
+                  textDecoration="none"
                 >
                   Saber Más
-                </Button>
+                </Links>
               </Box>
             </Box>
           </Box>

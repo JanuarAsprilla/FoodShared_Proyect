@@ -56,8 +56,8 @@ const Contacts = () => {
                   <Image
                     src="src/assets/img/whatsapp.png"
                     alt="logo Whatsapp"
-                    width="90px"
-                    height="90px"
+                    width="60px"
+                    height="60px"
                   />
                 </Box>
                 <Box
@@ -125,8 +125,8 @@ const Contacts = () => {
                   <Image
                     src="src/assets/img/correoElectronico.png"
                     alt="logo Whatsapp"
-                    width="90px"
-                    height="90px"
+                    width="60px"
+                    height="60px"
                   />
                 </Box>
                 <Box
@@ -193,8 +193,8 @@ const Contacts = () => {
                   <Image
                     src="src/assets/img/social.png"
                     alt="logo Whatsapp"
-                    width="90px"
-                    height="90px"
+                    width="60px"
+                    height="60px"
                   />
                 </Box>
                 <Box

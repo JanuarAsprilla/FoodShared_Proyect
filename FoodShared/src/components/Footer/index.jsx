@@ -72,14 +72,15 @@ function Footer() {
                 borderRadius="50%"
               />
             </Links>
-            <Heading
-              level={2}
+            <Links
+              fontSize="30px"
               fontWeight="bold"
               textAlign="center"
               color="#002D07"
+              textDecoration="none"
             >
               FoodShared
-            </Heading>
+            </Links>
           </Box>
           <Box gap="20px">
             <Heading level={2} color="#002D07">
@@ -92,7 +93,6 @@ function Footer() {
               amigo@bancodealimentos.org.co
             </Paragraphs>
             <Paragraphs fontWeight="bold">
-              {' '}
               Recepción: +57 312 5048747
             </Paragraphs>
           </Box>

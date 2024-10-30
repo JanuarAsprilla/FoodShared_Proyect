@@ -7,14 +7,13 @@ import Paragraphs from '../components/Paragraph'
 import Footer from '../components/Footer'
 import Links from '../components/Link'
 
-const AboutUs = () => {
+const MoreAboutUs = () => {
   return (
     <>
       <Navbar />
       <Box
         backgroundColor="#d6d2be"
         display="grid"
-        justifyContent="center"
         gap=" 60px"
         padding=" 20px 10px"
       >
@@ -28,7 +27,7 @@ const AboutUs = () => {
         </Box>
         <Box margin=" 0 0 50px 0">
           <Heading level={1} color="#4B8B00" textAlign="center">
-            Sobre Nosotros
+            El 37% de los alimentos que se producen, se desperdician
           </Heading>
         </Box>
         <Box
@@ -41,24 +40,23 @@ const AboutUs = () => {
             boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
             backgroundColor="#ffffff"
             borderRadius="30px"
-            width="345px"
+            width="290px"
+            height="230px"
             padding=" 15px"
             display="grid"
             gridTemplateRows="auto  auto"
             alignItems="center"
           >
-            <Box margin>
-              <Heading level={2} color="#4B8B00" textAlign="center">
-                Mision
+            <Box margin="1px auto">
+              <Heading level={2} color="#4B8B00">
+                Nuestra motivacion
               </Heading>
             </Box>
             <Box>
               <Paragraphs fontSize="17px" padding="10px">
-                Foodshare es un sitio web que reduce el desperdicio de alimentos
-                al conectar donantes con organizaciones y familias necesitadas,
-                garantizando que los alimentos frescos lleguen a quienes más los
-                requieren. Trabajamos para construir una comunidad solidaria que
-                comparta recursos de manera sostenible y equitativa.
+                El desperdicio de alimentos contribuye significativamente a las
+                emisiones de gases de efecto invernadero y a la sobreexplotación
+                de recursos naturales (agua, suelo, energía).
               </Paragraphs>
             </Box>
           </Box>
@@ -66,70 +64,49 @@ const AboutUs = () => {
             boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
             backgroundColor="#ffffff"
             borderRadius="30px"
-            width="345px"
+            width="290px"
+            height="230px"
             padding=" 15px"
             display="grid"
             gridTemplateRows="auto  auto"
             alignItems="center"
           >
-            <Box>
-              <Heading level={2} color="#4B8B00" textAlign="center">
-                Visión
+            <Box margin="1px auto">
+              <Heading level={2} color="#4B8B00">
+                Nuestro proposito
               </Heading>
             </Box>
             <Box>
               <Paragraphs fontSize="17px" padding="10px">
-                Ser la plataforma líder en la lucha contra el hambre y el
-                desperdicio de alimentos, promoviendo una cultura de generosidad
-                y responsabilidad social. Aspiramos a que en el futuro, ningún
-                alimento apto para el consumo se desperdicie, y todas las
-                personas tengan acceso a las comidas. nutritivas.
+                Reducir la cantidad de alimentos que se desechan mediante la
+                implementación de prácticas de monitoreo, reutilización,
+                donación y optimización de recursos.
               </Paragraphs>
             </Box>
           </Box>
         </Box>
-        <Box
-          margin="5px auto"
-          width="105px"
-          backgroundColor="#4b8b00"
-          hoverBackgroundColor="#2e5500"
-          borderRadius="30px"
-          padding=" 10px 25px"
-          transition="all 0.5s ease"
-        >
-          <Links
-            to="/Mas_Sobre_Nosotros"
-            fontSize="17px"
-            fontWeight="bold"
-            padding="10px 1px"
-            color="#ffffff"
-            textDecoration="none"
-          >
-            Saber Mas...
-          </Links>
-        </Box>
         <Box>
           <Heading level={2} color="#4B8B00" textAlign="center">
-            Beneficiaros de Foodshare
+            Grupo Poblacional
           </Heading>
           <Box
             display="grid"
-            gridTemplateColumns="repeat(2, 1fr)"
+            gridTemplateColumns="repeat(3, 1fr)"
             gap="50px"
-            margin=" 20px 0"
+            margin=" 50px 0"
           >
             <Box display="grid" gridTemplateRows="repeat(3, auto)" gap="10px">
-              <Box>
+              <Box margin=" 0 0 15px 0">
                 <Heading level={2} color="#4B8B00" textAlign="center">
-                  Niños
+                  Comedor Escolar
                 </Heading>
               </Box>
-              <Box>
+              <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/niños.jpg"
+                  src="src/assets/img/comedorEscolar.jpg"
                   alt="logo FoodShared"
-                  width="400px"
-                  height="300px"
+                  width="350px"
+                  height="250px"
                 />
               </Box>
               <Box margin="1px auto">
@@ -143,17 +120,41 @@ const AboutUs = () => {
               </Box>
             </Box>
             <Box display="grid" gridTemplateRows="repeat(3, auto)" gap="10px">
-              <Box>
+              <Box margin=" 0 0 15px 0">
                 <Heading level={2} color="#4B8B00" textAlign="center">
-                  Familias
+                  Adulto mayor
                 </Heading>
               </Box>
-              <Box>
+              <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/familia.jpg"
+                  src="src/assets/img/AdultoMayor.jpg"
                   alt="logo FoodShared"
-                  width="400px"
-                  height="300px"
+                  width="350px"
+                  height="250px"
+                />
+              </Box>
+              <Box margin="1px auto">
+                <Image
+                  src="src/assets/img/LogoAdultoMayor.png"
+                  alt="logo FoodShared"
+                  width="125px"
+                  height="125px"
+                  borderRadius="50%"
+                />
+              </Box>
+            </Box>
+            <Box display="grid" gridTemplateRows="repeat(3, auto)" gap="10px">
+              <Box margin=" 0 0 15px 0">
+                <Heading level={2} color="#4B8B00" textAlign="center">
+                  Ayuda Humanitaria
+                </Heading>
+              </Box>
+              <Box margin="1px auto">
+                <Image
+                  src="src/assets/img/AyudaHumanitaria.png"
+                  alt="logo FoodShared"
+                  width="350px"
+                  height="250px"
                 />
               </Box>
               <Box margin="1px auto">
@@ -174,4 +175,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default MoreAboutUs

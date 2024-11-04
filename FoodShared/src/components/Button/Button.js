@@ -17,10 +17,9 @@ const StyledButton = styled.button`
   height: ${(props) => props.height || 'auto'};
 
   &:hover {
-    background-color: ${(props) => props.hoverBackgroundColor || '#0056b3'};
-    color: ${(props) => props.hoverColor || 'white'};
-    box-shadow: ${(props) =>
-      props.hoverBoxShadow || '0px 4px 10px rgba(0, 0, 0, 0.2)'};
+    background-color: ${(props) => props.hoverBackgroundColor};
+    color: ${(props) => props.hoverColor};
+    box-shadow: ${(props) => props.hoverBoxShadow};
 
   &:desabled {
     background-color: ${(props) => props.disabledBackgroundColor || '#ccc'};

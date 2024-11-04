@@ -1,15 +1,19 @@
+import React from 'react'
+import { Helmet } from 'react-helmet'
+
 import Navbar from '../components/NavBar'
 import Box from '../components/Box'
 import Image from '../components/ImageComponent'
 import Heading from '../components/Heading'
 import Paragraphs from '../components/Paragraph'
-
 import Footer from '../components/Footer'
-import Links from '../components/Link'
 
 const MoreAboutUs = () => {
   return (
     <>
+      <Helmet>
+        <title>Sobre Nosotros</title>
+      </Helmet>
       <Navbar />
       <Box
         backgroundColor="#d6d2be"

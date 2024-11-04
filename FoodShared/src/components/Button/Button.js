@@ -21,6 +21,12 @@ const StyledButton = styled.button`
     color: ${(props) => props.hoverColor || 'white'};
     box-shadow: ${(props) =>
       props.hoverBoxShadow || '0px 4px 10px rgba(0, 0, 0, 0.2)'};
+
+  &:desabled {
+    background-color: ${(props) => props.disabledBackgroundColor || '#ccc'};
+    color: ${(props) => props.disabledColor || '#999'};
+    cursor: not-allowed;
+  }
 `
 
 export { StyledButton }

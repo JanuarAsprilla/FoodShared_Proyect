@@ -1,9 +1,15 @@
 import React from 'react'
 import { StyledButton } from './Button'
 
-const Button = ({ href, children, ...props }) => {
+const Button = ({ onClick, name, type, disabled, children, ...props }) => {
   return (
-    <StyledButton href={href} {...props}>
+    <StyledButton
+      onClick={onClick}
+      name={name}
+      type={type}
+      disabled={disabled}
+      {...props}
+    >
       {children}
     </StyledButton>
   )

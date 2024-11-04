@@ -6,6 +6,7 @@ import PageHome from '../pages/Home'
 import Contacts from '../pages/Contacts'
 import MoreAboutUs from '../pages/MoreAboutUs'
 import Login from '../pages/Login'
+import TypeRegister from '../pages/typeRegister'
 
 const RoutesApp = () => {
   return (
@@ -16,6 +17,7 @@ const RoutesApp = () => {
         <Route path="/Sobre_Nosotros" element={<AboutUs />} />
         <Route path="/Mas_Sobre_Nosotros" element={<MoreAboutUs />} />
         <Route path="/Iniciar_Sesion" element={<Login />} />
+        <Route path="/Tipo_Registro" element={<TypeRegister />} />
       </Routes>
     </Router>
   )

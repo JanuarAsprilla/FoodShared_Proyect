@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { useState } from 'react'
 
 import usePasswordToggle from '../hooks/usePasswordToggle'
 
@@ -149,7 +148,7 @@ const Login = () => {
                     Iniciar Sesion
                   </Button>
                 </Links>
-                <Links to="/">
+                <Links to="/Tipo_Registro">
                   <Button
                     type="submit"
                     backgroundColor="#4B8B00"

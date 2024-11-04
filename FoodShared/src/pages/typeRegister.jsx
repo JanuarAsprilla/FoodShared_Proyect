@@ -4,13 +4,58 @@ import { Helmet } from 'react-helmet'
 import Box from '../components/Box'
 import Image from '../components/ImageComponent'
 import Heading from '../components/Heading'
-import Form from '../components/Form'
-import Label from '../components/Label'
-import Input from '../components/Input'
-import Button from '../components/Button'
 import Links from '../components/Link'
 
 const TypeRegister = () => {
+  const typeRegister = [
+    {
+      src: 'src/assets/img/edificio.png',
+      alt: 'Logo de edifio',
+      to: '/Sobre_Nosotros',
+      label: 'Empresa',
+    },
+    {
+      src: 'src/assets/img/usuario.png',
+      alt: 'Logo de usuario',
+      to: '/Sobre_Nosotros',
+      label: 'Persona',
+    },
+  ]
+
+  const typeRegisterRender = typeRegister.map((dates, index) => (
+    <Box display="grid" gap="30px">
+      <Box
+        key={index}
+        boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
+        borderRadius="50%"
+        padding="10px"
+      >
+        <Image src={dates.src} alt={dates.alt} width="150px" height="150px" />
+      </Box>
+      <Box
+        width="150px"
+        margin="10px 0"
+        borderRadius="30px"
+        padding=" 10px"
+        textAlign="center"
+        backgroundColor="#4b8b00"
+        hoverBackgroundColor="#355c0b"
+        transition="all 0.3s ease"
+      >
+        <Links
+          to={dates.to}
+          fontSize="20px"
+          color="#ffffff"
+          hoverColor="#fffaf2"
+          fontWeight="bold"
+          textDecoration="none"
+          padding=" 10px"
+        >
+          {dates.label}
+        </Links>
+      </Box>
+    </Box>
+  ))
   return (
     <>
       <Helmet>
@@ -44,78 +89,7 @@ const TypeRegister = () => {
             gridTemplateColumns="repeat(2, 1fr)"
             gap="150px"
           >
-            <Box display="grid" gap="30px">
-              <Box
-                boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
-                borderRadius="50%"
-                padding="10px"
-              >
-                <Image
-                  src="src/assets/img/edificio.png"
-                  alt="Logo de edifio"
-                  width="150px"
-                  height="150px"
-                />
-              </Box>
-              <Box
-                width="150px"
-                margin="10px 0"
-                borderRadius="30px"
-                padding=" 10px"
-                textAlign="center"
-                backgroundColor="#4b8b00"
-                hoverBackgroundColor="#355c0b"
-                transition="all 0.3s ease"
-              >
-                <Links
-                  to="/Sobre_Nosotros"
-                  fontSize="20px"
-                  color="#ffffff"
-                  hoverColor="#fffaf2"
-                  fontWeight="bold"
-                  textDecoration="none"
-                  padding=" 10px"
-                >
-                  Empresa
-                </Links>
-              </Box>
-            </Box>
-            <Box display="grid" gap="30px">
-              <Box
-                boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
-                borderRadius="50%"
-                padding="10px"
-              >
-                <Image
-                  src="src/assets/img/usuario.png"
-                  alt="Logo de edifio"
-                  width="150px"
-                  height="150px"
-                />
-              </Box>
-              <Box
-                width="150px"
-                margin="10px 0"
-                borderRadius="30px"
-                padding=" 10px"
-                textAlign="center"
-                backgroundColor="#4b8b00"
-                hoverBackgroundColor="#355c0b"
-                transition="all 0.3s ease"
-              >
-                <Links
-                  to="/Sobre_Nosotros"
-                  fontSize="20px"
-                  color="#ffffff"
-                  hoverColor="#fffaf2"
-                  fontWeight="bold"
-                  textDecoration="none"
-                  padding=" 10px"
-                >
-                  Persona
-                </Links>
-              </Box>
-            </Box>
+            {typeRegisterRender}
           </Box>
         </Box>
       </Box>

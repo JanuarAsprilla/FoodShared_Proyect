@@ -44,7 +44,7 @@ const TypeRegister = () => {
             gridTemplateColumns="repeat(2, 1fr)"
             gap="150px"
           >
-            <Box gap="50px">
+            <Box display="grid" gap="30px">
               <Box
                 boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
                 borderRadius="50%"
@@ -80,7 +80,7 @@ const TypeRegister = () => {
                 </Links>
               </Box>
             </Box>
-            <Box gap="50px">
+            <Box display="grid" gap="30px">
               <Box
                 boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
                 borderRadius="50%"

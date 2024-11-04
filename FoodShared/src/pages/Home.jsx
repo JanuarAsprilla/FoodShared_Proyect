@@ -1,4 +1,6 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+
 import NavBar from '../components/NavBar'
 import Image from '../components/ImageComponent'
 import Paragraphs from '../components/Paragraph'
@@ -6,11 +8,13 @@ import Heading from '../components/Heading'
 import Box from '../components/Box'
 import Link from '../components/Link'
 import Footer from '../components/Footer'
-import Button from '../components/Button'
 import Links from '../components/Link'
 function PageHome() {
   return (
     <>
+      <Helmet>
+        <title>FoodShared | Inicio</title>
+      </Helmet>
       <NavBar />
       <Box>
         <Box

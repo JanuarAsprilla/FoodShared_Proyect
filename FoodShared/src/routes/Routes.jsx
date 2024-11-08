@@ -7,6 +7,8 @@ import Contacts from '../pages/Contacts'
 import MoreAboutUs from '../pages/MoreAboutUs'
 import Login from '../pages/Login'
 import TypeRegister from '../pages/typeRegister'
+import RegisterUsuarme from '../pages/RegisterUsuarme'
+import RegisterCompay from '../pages/RegisterCompany'
 
 const RoutesApp = () => {
   return (
@@ -18,6 +20,8 @@ const RoutesApp = () => {
         <Route path="/Mas_Sobre_Nosotros" element={<MoreAboutUs />} />
         <Route path="/Iniciar_Sesion" element={<Login />} />
         <Route path="/Tipo_Registro" element={<TypeRegister />} />
+        <Route path="/Registro_Persona" element={<RegisterUsuarme />} />
+        <Route path="/Registro_Empresa" element={<RegisterCompay />} />
       </Routes>
     </Router>
   )

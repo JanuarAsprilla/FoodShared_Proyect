@@ -1,13 +1,13 @@
 import StyledSelect from './select'
+import Options from './ComponentOptions'
 
-const Select = ({ options = [], ...props }) => {
+const Select = ({ options = [], id, defaultValue = '', ...props }) => {
   return (
-    <StyledSelect {...props}>
-      {options.map((option, index) => (
-        <option key={index} value={option.value}>
-          {option.label}
-        </option>
-      ))}
+    <StyledSelect id={id} defaultValue={defaultValue} {...props}>
+      <option value="" disabled>
+        Selecciona una opción
+      </option>
+      <Options options={options} />
     </StyledSelect>
   )
 }

@@ -11,6 +11,18 @@ const StyledInput = styled.input`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   outline: ${(props) => props.outline};
+  appearance: ${(props) => props.appearance};
+  /* Elimina las flechas en Chrome, Safari, Edge y Opera */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Elimina las flechas en Firefox */
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
 `
 
 export default StyledInput

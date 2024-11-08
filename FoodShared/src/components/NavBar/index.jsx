@@ -105,7 +105,7 @@ const NavBar = () => {
           hoverBackgroundColor="#355c0b"
         >
           <Links
-            to="#"
+            to="/Tipo_Registro"
             fontSize="12px"
             fontWeight="bold"
             color="#ffffff"

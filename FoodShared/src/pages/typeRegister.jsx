@@ -11,13 +11,13 @@ const TypeRegister = () => {
     {
       src: 'src/assets/img/edificio.png',
       alt: 'Logo de edifio',
-      to: '/Sobre_Nosotros',
+      to: '/Registro_Empresa',
       label: 'Empresa',
     },
     {
       src: 'src/assets/img/usuario.png',
       alt: 'Logo de usuario',
-      to: '/Sobre_Nosotros',
+      to: '/Registro_Persona',
       label: 'Persona',
     },
   ]

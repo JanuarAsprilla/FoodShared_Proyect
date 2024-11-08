@@ -86,7 +86,7 @@ const NavBar = () => {
           hoverBackgroundColor="#3a3830"
         >
           <Links
-            to="#"
+            to="/Iniciar_Sesion"
             fontSize="12px"
             fontWeight="bold"
             color="white"
@@ -105,7 +105,7 @@ const NavBar = () => {
           hoverBackgroundColor="#355c0b"
         >
           <Links
-            to="#"
+            to="/Tipo_Registro"
             fontSize="12px"
             fontWeight="bold"
             color="#ffffff"

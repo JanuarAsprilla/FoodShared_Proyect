@@ -1,4 +1,3 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Box from '../components/Box'
@@ -23,9 +22,9 @@ const TypeRegister = () => {
   ]
 
   const typeRegisterRender = typeRegister.map((dates, index) => (
-    <Box display="grid" gap="30px">
+    <Box key={index} display="grid" gap="30px">
       <Box
-        key={index}
+        key={`${index}-inner`}
         boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
         borderRadius="50%"
         padding="10px"

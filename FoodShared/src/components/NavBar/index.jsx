@@ -1,4 +1,3 @@
-import React from 'react'
 import Box from '../Box'
 import Links from '../Link'
 import LogoImage from '../ImageComponent'
@@ -6,7 +5,7 @@ import LogoImage from '../ImageComponent'
 const NavBar = () => {
   const navLinks = [
     { to: '/', label: 'Inicio' },
-    { to: '#', label: 'Donar Alimento' },
+    { to: '/Donar_Alimento', label: 'Donar Alimento' },
     { to: '#', label: 'Solicitar Alimentos' },
     { to: '/Sobre_Nosotros', label: 'Sobre Nosotros' },
     { to: '/contactanos', label: 'Contactanos' },

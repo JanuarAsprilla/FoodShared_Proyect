@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import AboutUs from '../pages/AboutUs'
@@ -9,6 +8,7 @@ import Login from '../pages/Login'
 import TypeRegister from '../pages/typeRegister'
 import RegisterUsuarme from '../pages/RegisterUsuarme'
 import RegisterCompay from '../pages/RegisterCompany'
+import DonateFood from '../pages/DonateFood'
 
 const RoutesApp = () => {
   return (
@@ -22,6 +22,7 @@ const RoutesApp = () => {
         <Route path="/Tipo_Registro" element={<TypeRegister />} />
         <Route path="/Registro_Persona" element={<RegisterUsuarme />} />
         <Route path="/Registro_Empresa" element={<RegisterCompay />} />
+        <Route path="/Donar_Alimento" element={<DonateFood />} />
       </Routes>
     </Router>
   )

@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+eslint-disable no-unused-vars 
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

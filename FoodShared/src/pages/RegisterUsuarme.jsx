@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
+
 import Box from '../components/Box'
 import Image from '../components/ImageComponent'
-import { Helmet } from 'react-helmet'
 import Paragraph from '../components/Paragraph'
 import Heading from '../components/Heading'
 import Form from '../components/Form'
@@ -8,12 +10,12 @@ import Label from '../components/Label'
 import Input from '../components/Input'
 import Button from '../components/Button'
 import Links from '../components/Link'
-import ver from '../assets/img/ver.png'
-import noVer from '../assets/img/noVer.png'
 import Footer from '../components/Footer'
-import { useNavigate } from 'react-router-dom'
 
 import usePasswordToggle from '../hooks/usePasswordToggle'
+
+import ver from '../assets/img/ver.png'
+import noVer from '../assets/img/noVer.png'
 
 const RegisterUsuarme = () => {
   const [showPassword, togglePasswordVisibility] = usePasswordToggle()
@@ -51,7 +53,7 @@ const RegisterUsuarme = () => {
       type: showPassword ? 'text' : 'password',
       placeholder: 'Confirmar Contraseña',
       src: showPassword ? ver : noVer,
-      alt: 'ver' || 'noVer',
+      alt: showPassword ? 'ver' : 'noVer',
       onClick: togglePasswordVisibility,
     },
   ]

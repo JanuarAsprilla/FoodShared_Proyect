@@ -11,7 +11,7 @@ function Footer() {
       label: 'Inicio',
     },
     {
-      to: '#',
+      to: '/Donar_Alimento',
       label: 'Donar Alimento',
     },
     {

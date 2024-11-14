@@ -1,4 +1,3 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/NavBar'
@@ -25,7 +24,7 @@ const AboutUs = () => {
       >
         <Box margin=" 0 auto">
           <Image
-            src="src/assets/img/logo-removebg-preview.png"
+            src="public/logo-removebg-preview.png"
             alt="logo FoodShared"
             width="450px"
             height="400px"
@@ -131,7 +130,7 @@ const AboutUs = () => {
               </Box>
               <Box>
                 <Image
-                  src="src/assets/img/niños.jpg"
+                  src="public/niños.jpg"
                   alt="logo FoodShared"
                   width="400px"
                   height="300px"
@@ -139,7 +138,7 @@ const AboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/LogoBemeficiariosNiños.png"
+                  src="public/LogoBemeficiariosNiños.png"
                   alt="logo FoodShared"
                   width="125px"
                   height="125px"
@@ -155,7 +154,7 @@ const AboutUs = () => {
               </Box>
               <Box>
                 <Image
-                  src="src/assets/img/familia.jpg"
+                  src="public/familia.jpg"
                   alt="logo FoodShared"
                   width="400px"
                   height="300px"
@@ -163,7 +162,7 @@ const AboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/LogoBeneficiarioFamilia.png"
+                  src="public/LogoBeneficiarioFamilia.png"
                   alt="logo FoodShared"
                   width="125px"
                   height="125px"

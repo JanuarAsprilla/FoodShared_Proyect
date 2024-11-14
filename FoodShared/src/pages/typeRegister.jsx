@@ -1,4 +1,3 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Box from '../components/Box'
@@ -9,13 +8,13 @@ import Links from '../components/Link'
 const TypeRegister = () => {
   const typeRegister = [
     {
-      src: 'src/assets/img/edificio.png',
+      src: 'public/edificio.png',
       alt: 'Logo de edifio',
       to: '/Registro_Empresa',
       label: 'Empresa',
     },
     {
-      src: 'src/assets/img/usuario.png',
+      src: 'public/usuario.png',
       alt: 'Logo de usuario',
       to: '/Registro_Persona',
       label: 'Persona',
@@ -23,9 +22,9 @@ const TypeRegister = () => {
   ]
 
   const typeRegisterRender = typeRegister.map((dates, index) => (
-    <Box display="grid" gap="30px">
+    <Box key={index} display="grid" gap="30px">
       <Box
-        key={index}
+        key={`${index}-inner`}
         boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
         borderRadius="50%"
         padding="10px"
@@ -71,7 +70,7 @@ const TypeRegister = () => {
           >
             <Links to="/">
               <Image
-                src="src/assets/img/logo-removebg-preview.png"
+                src="public/logo-removebg-preview.png"
                 alt="logo FoodShared"
                 width="150px"
                 height="150px"

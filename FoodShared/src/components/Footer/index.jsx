@@ -11,7 +11,7 @@ function Footer() {
       label: 'Inicio',
     },
     {
-      to: '#',
+      to: '/Donar_Alimento',
       label: 'Donar Alimento',
     },
     {
@@ -65,7 +65,7 @@ function Footer() {
           >
             <Links to="/">
               <Image
-                src="src/assets/img/logoSinNombre.jpeg"
+                src="public/logoSinNombre.jpeg"
                 alt="logo FoodShared"
                 width="100px"
                 height="100px"
@@ -111,7 +111,7 @@ function Footer() {
           <Box display="grid" gridTemplateColumns="auto auto auto" gap="30px">
             <Links to={'www.facebook.com'}>
               <Image
-                src="src/assets/img/facebook.png"
+                src="public/facebook.png"
                 alt="logo facebook"
                 width="60px"
                 height="60px"
@@ -119,7 +119,7 @@ function Footer() {
             </Links>
             <Links to={'www.instagram.com'}>
               <Image
-                src="src/assets/img/instagram.png"
+                src="public/instagram.png"
                 alt="logo instagram"
                 width="60px"
                 height="60px"
@@ -127,7 +127,7 @@ function Footer() {
             </Links>
             <Links to={'www.youtube.com'}>
               <Image
-                src="src/assets/img/youtube.png"
+                src="public/youtube.png"
                 alt="logo Youtube"
                 width="60px"
                 height="60px"
@@ -137,7 +137,7 @@ function Footer() {
           <Box display="grid" gridTemplateColumns="auto auto" gap="30px">
             <Links to={'www.gmail.com'}>
               <Image
-                src="src/assets/img/correoElectronico.png"
+                src="public/correoElectronico.png"
                 alt="logo Gmail"
                 width="60px"
                 height="60px"
@@ -145,7 +145,7 @@ function Footer() {
             </Links>
             <Links to={'www.x.com'}>
               <Image
-                src="src/assets/img/X.png"
+                src="public/X.png"
                 alt="logo X"
                 width="60px"
                 height="60px"

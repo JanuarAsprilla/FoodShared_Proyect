@@ -1,4 +1,3 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import NavBar from '../components/NavBar'
@@ -26,7 +25,7 @@ function PageHome() {
           padding=" 20px 10px"
         >
           <Image
-            src="src/assets/img/logo-removebg-preview.png"
+            src="public/logo-removebg-preview.png"
             alt="logo FoodShared"
             width="450px"
             height="400px"
@@ -320,25 +319,25 @@ function PageHome() {
             padding="0 10px 40px 10px"
           >
             <Image
-              src="src/assets/img/ShairaRestaurante.jpeg"
+              src="public/ShairaRestaurante.jpeg"
               width="200"
               height="200px"
               alt="2"
             ></Image>
             <Image
-              src="src/assets/img/LaPailaAbuela.png"
+              src="public/LaPailaAbuela.png"
               width="200"
               height="200px"
               alt="Restaurante Tipico La Paila de mi Abuela"
             ></Image>
             <Image
-              src="src/assets/img/Frescura.png"
+              src="public/Frescura.png"
               width="200"
               height="200px"
               alt="Freskura"
             ></Image>
             <Image
-              src="src/assets/img/ElTablazo.jpeg"
+              src="public/ElTablazo.jpeg"
               width="200"
               height="200px"
               alt="Restaurante el Tablazo"
@@ -377,7 +376,7 @@ function PageHome() {
               >
                 <Box>
                   <Image
-                    src="src/assets/img/KitsAlimentos.jpg"
+                    src="public/KitsAlimentos.jpg"
                     width="490"
                     height="290px"
                     alt="Restaurante el Tablazo"
@@ -433,7 +432,7 @@ function PageHome() {
                 >
                   <Box>
                     <Image
-                      src="src/assets/img/Procuradora.jpg"
+                      src="public/Procuradora.jpg"
                       width="400"
                       height="190px"
                       alt="Restaurante el Tablazo"
@@ -467,7 +466,7 @@ function PageHome() {
                 >
                   <Box>
                     <Image
-                      src="src/assets/img/PAE.jpg"
+                      src="public/PAE.jpg"
                       width="400"
                       height="190px"
                       alt="Restaurante el Tablazo"

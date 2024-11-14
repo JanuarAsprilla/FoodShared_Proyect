@@ -1,7 +1,0 @@
-{
-  "extends": ["react-app", "eslint:recommended", "prettier"],
-  "rules": {
-    "react/react-in-jsx-scope": "off",
-    "prettier/prettier": ["error"]
-  }
-}

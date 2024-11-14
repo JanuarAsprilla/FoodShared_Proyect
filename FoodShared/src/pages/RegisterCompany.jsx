@@ -1,6 +1,8 @@
+import { Helmet } from 'react-helmet'
+import { useNavigate } from 'react-router-dom'
+
 import Box from '../components/Box'
 import Image from '../components/ImageComponent'
-import { Helmet } from 'react-helmet'
 import Paragraph from '../components/Paragraph'
 import Heading from '../components/Heading'
 import Form from '../components/Form'
@@ -9,7 +11,6 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 import Links from '../components/Link'
 import Footer from '../components/Footer'
-import { useNavigate } from 'react-router-dom'
 import Select from '../components/Select'
 
 const RegisterCompay = () => {
@@ -143,7 +144,7 @@ const RegisterCompay = () => {
   return (
     <>
       <Helmet>
-        <title>Registro de Usuario</title>
+        <title>Registro de Empresa</title>
       </Helmet>
       <Box backgroundColor="#d6d2be">
         <Box
@@ -161,7 +162,7 @@ const RegisterCompay = () => {
           >
             <Links to="/">
               <Image
-                src="src/assets/img/logo-removebg-preview.png"
+                src="public/logo-removebg-preview.png"
                 alt="logo FoodShared"
                 width="150px"
                 height="150px"

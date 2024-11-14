@@ -1,4 +1,3 @@
-import React from 'react'
 import Box from '../Box'
 import Links from '../Link'
 import LogoImage from '../ImageComponent'
@@ -6,7 +5,7 @@ import LogoImage from '../ImageComponent'
 const NavBar = () => {
   const navLinks = [
     { to: '/', label: 'Inicio' },
-    { to: '#', label: 'Donar Alimento' },
+    { to: '/Donar_Alimento', label: 'Donar Alimento' },
     { to: '#', label: 'Solicitar Alimentos' },
     { to: '/Sobre_Nosotros', label: 'Sobre Nosotros' },
     { to: '/contactanos', label: 'Contactanos' },
@@ -50,7 +49,7 @@ const NavBar = () => {
       <Box display="flex" alignItems="center" height="50px" gap="5px">
         <Links to="/">
           <LogoImage
-            src="src/assets/img/logo.jpeg"
+            src="public/logo.jpeg"
             alt="logo FoodShared"
             width="50px"
             height="50px"

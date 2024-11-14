@@ -22,7 +22,7 @@ const MoreAboutUs = () => {
       >
         <Box margin=" 0 auto">
           <Image
-            src="src/assets/img/logo-removebg-preview.png"
+            src="public/logo-removebg-preview.png"
             alt="logo FoodShared"
             width="450px"
             height="400px"
@@ -106,7 +106,7 @@ const MoreAboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/comedorEscolar.jpg"
+                  src="public/comedorEscolar.jpg"
                   alt="logo FoodShared"
                   width="350px"
                   height="250px"
@@ -114,7 +114,7 @@ const MoreAboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/LogoBemeficiariosNiños.png"
+                  src="public/LogoBemeficiariosNiños.png"
                   alt="logo FoodShared"
                   width="125px"
                   height="125px"
@@ -130,7 +130,7 @@ const MoreAboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/AdultoMayor.jpg"
+                  src="public/AdultoMayor.jpg"
                   alt="logo FoodShared"
                   width="350px"
                   height="250px"
@@ -138,7 +138,7 @@ const MoreAboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/LogoAdultoMayor.png"
+                  src="public/LogoAdultoMayor.png"
                   alt="logo FoodShared"
                   width="125px"
                   height="125px"
@@ -154,7 +154,7 @@ const MoreAboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/AyudaHumanitaria.png"
+                  src="public/AyudaHumanitaria.png"
                   alt="logo FoodShared"
                   width="350px"
                   height="250px"
@@ -162,7 +162,7 @@ const MoreAboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="src/assets/img/LogoBeneficiarioFamilia.png"
+                  src="public/LogoBeneficiarioFamilia.png"
                   alt="logo FoodShared"
                   width="125px"
                   height="125px"

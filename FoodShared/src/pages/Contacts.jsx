@@ -25,7 +25,7 @@ const Contacts = () => {
       >
         <Box display="flex" justifyContent="center">
           <Image
-            src="src/assets/img/logo-removebg-preview.png"
+            src="public/logo-removebg-preview.png"
             alt="logo FoodShared"
             width="450px"
             height="400px"
@@ -58,7 +58,7 @@ const Contacts = () => {
               >
                 <Box>
                   <Image
-                    src="src/assets/img/whatsapp.png"
+                    src="public/whatsapp.png"
                     alt="logo Whatsapp"
                     width="60px"
                     height="60px"
@@ -99,7 +99,7 @@ const Contacts = () => {
                   >
                     <Paragraphs>Abre WhatsApp</Paragraphs>
                     <Image
-                      src="src/assets/img/flecha-correcta.png"
+                      src="public/flecha-correcta.png"
                       alt="flecha"
                       width="20px"
                       height="20px"
@@ -127,7 +127,7 @@ const Contacts = () => {
               >
                 <Box>
                   <Image
-                    src="src/assets/img/correoElectronico.png"
+                    src="public/correoElectronico.png"
                     alt="logo Whatsapp"
                     width="60px"
                     height="60px"
@@ -167,7 +167,7 @@ const Contacts = () => {
                   >
                     <Paragraphs>Enviar Correo</Paragraphs>
                     <Image
-                      src="src/assets/img/flecha-correcta.png"
+                      src="public/flecha-correcta.png"
                       alt="flecha"
                       width="20px"
                       height="20px"
@@ -195,7 +195,7 @@ const Contacts = () => {
               >
                 <Box>
                   <Image
-                    src="src/assets/img/social.png"
+                    src="public/social.png"
                     alt="logo Whatsapp"
                     width="60px"
                     height="60px"
@@ -236,7 +236,7 @@ const Contacts = () => {
                   >
                     <Paragraphs>Abre Linkedln</Paragraphs>
                     <Image
-                      src="src/assets/img/flecha-correcta.png"
+                      src="public/flecha-correcta.png"
                       alt="flecha"
                       width="20px"
                       height="20px"

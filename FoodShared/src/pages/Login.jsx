@@ -38,7 +38,7 @@ const Login = () => {
           >
             <Links to="/">
               <Image
-                src="src/assets/img/logo-removebg-preview.png"
+                src="public/logo-removebg-preview.png"
                 alt="logo FoodShared"
                 width="150px"
                 height="150px"

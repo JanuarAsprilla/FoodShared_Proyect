@@ -254,7 +254,7 @@ const DonateFood = () => {
         <Box margin=" 0 auto">
           <Links to="/">
             <Image
-              src="src/assets/img/logo-removebg-preview.png"
+              src="public/logo-removebg-preview.png"
               alt="logo FoodShared"
               width="450px"
               height="450px"

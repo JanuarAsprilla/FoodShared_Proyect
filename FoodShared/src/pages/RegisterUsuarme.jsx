@@ -14,8 +14,8 @@ import Footer from '../components/Footer'
 
 import usePasswordToggle from '../hooks/usePasswordToggle'
 
-import ver from '../assets/img/ver.png'
-import noVer from '../assets/img/noVer.png'
+import ver from 'public/ver.png'
+import noVer from 'public/noVer.png'
 
 const RegisterUsuarme = () => {
   const [showPassword, togglePasswordVisibility] = usePasswordToggle()

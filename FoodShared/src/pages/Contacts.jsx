@@ -25,7 +25,7 @@ const Contacts = () => {
       >
         <Box display="flex" justifyContent="center">
           <Image
-            src="public/logo-removebg-preview.png"
+            src="/logo-removebg-preview.png"
             alt="logo FoodShared"
             width="450px"
             height="400px"
@@ -58,7 +58,7 @@ const Contacts = () => {
               >
                 <Box>
                   <Image
-                    src="public/whatsapp.png"
+                    src="/whatsapp.png"
                     alt="logo Whatsapp"
                     width="60px"
                     height="60px"
@@ -99,7 +99,7 @@ const Contacts = () => {
                   >
                     <Paragraphs>Abre WhatsApp</Paragraphs>
                     <Image
-                      src="public/flecha-correcta.png"
+                      src="/flecha-correcta.png"
                       alt="flecha"
                       width="20px"
                       height="20px"
@@ -127,7 +127,7 @@ const Contacts = () => {
               >
                 <Box>
                   <Image
-                    src="public/correoElectronico.png"
+                    src="/correoElectronico.png"
                     alt="logo Whatsapp"
                     width="60px"
                     height="60px"
@@ -167,7 +167,7 @@ const Contacts = () => {
                   >
                     <Paragraphs>Enviar Correo</Paragraphs>
                     <Image
-                      src="public/flecha-correcta.png"
+                      src="/flecha-correcta.png"
                       alt="flecha"
                       width="20px"
                       height="20px"
@@ -195,7 +195,7 @@ const Contacts = () => {
               >
                 <Box>
                   <Image
-                    src="public/social.png"
+                    src="/social.png"
                     alt="logo Whatsapp"
                     width="60px"
                     height="60px"
@@ -236,7 +236,7 @@ const Contacts = () => {
                   >
                     <Paragraphs>Abre Linkedln</Paragraphs>
                     <Image
-                      src="public/flecha-correcta.png"
+                      src="/flecha-correcta.png"
                       alt="flecha"
                       width="20px"
                       height="20px"

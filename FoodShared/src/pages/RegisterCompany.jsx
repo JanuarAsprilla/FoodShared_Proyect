@@ -162,7 +162,7 @@ const RegisterCompay = () => {
           >
             <Links to="/">
               <Image
-                src="public/logo-removebg-preview.png"
+                src="/logo-removebg-preview.png"
                 alt="logo FoodShared"
                 width="150px"
                 height="150px"

@@ -8,13 +8,13 @@ import Links from '../components/Link'
 const TypeRegister = () => {
   const typeRegister = [
     {
-      src: 'public/edificio.png',
+      src: '/edificio.png',
       alt: 'Logo de edifio',
       to: '/Registro_Empresa',
       label: 'Empresa',
     },
     {
-      src: 'public/usuario.png',
+      src: '/usuario.png',
       alt: 'Logo de usuario',
       to: '/Registro_Persona',
       label: 'Persona',
@@ -70,7 +70,7 @@ const TypeRegister = () => {
           >
             <Links to="/">
               <Image
-                src="public/logo-removebg-preview.png"
+                src="/logo-removebg-preview.png"
                 alt="logo FoodShared"
                 width="150px"
                 height="150px"

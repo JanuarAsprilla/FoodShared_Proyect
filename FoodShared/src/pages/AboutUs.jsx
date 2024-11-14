@@ -24,7 +24,7 @@ const AboutUs = () => {
       >
         <Box margin=" 0 auto">
           <Image
-            src="public/logo-removebg-preview.png"
+            src="/logo-removebg-preview.png"
             alt="logo FoodShared"
             width="450px"
             height="400px"
@@ -130,7 +130,7 @@ const AboutUs = () => {
               </Box>
               <Box>
                 <Image
-                  src="public/niños.jpg"
+                  src="/niños.jpg"
                   alt="logo FoodShared"
                   width="400px"
                   height="300px"
@@ -138,7 +138,7 @@ const AboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="public/LogoBemeficiariosNiños.png"
+                  src="/LogoBemeficiariosNiños.png"
                   alt="logo FoodShared"
                   width="125px"
                   height="125px"
@@ -154,7 +154,7 @@ const AboutUs = () => {
               </Box>
               <Box>
                 <Image
-                  src="public/familia.jpg"
+                  src="/familia.jpg"
                   alt="logo FoodShared"
                   width="400px"
                   height="300px"
@@ -162,7 +162,7 @@ const AboutUs = () => {
               </Box>
               <Box margin="1px auto">
                 <Image
-                  src="public/LogoBeneficiarioFamilia.png"
+                  src="/LogoBeneficiarioFamilia.png"
                   alt="logo FoodShared"
                   width="125px"
                   height="125px"

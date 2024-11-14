@@ -25,7 +25,7 @@ function PageHome() {
           padding=" 20px 10px"
         >
           <Image
-            src="public/logo-removebg-preview.png"
+            src="/logo-removebg-preview.png"
             alt="logo FoodShared"
             width="450px"
             height="400px"
@@ -319,25 +319,25 @@ function PageHome() {
             padding="0 10px 40px 10px"
           >
             <Image
-              src="public/ShairaRestaurante.jpeg"
+              src="/ShairaRestaurante.jpeg"
               width="200"
               height="200px"
               alt="2"
             ></Image>
             <Image
-              src="public/LaPailaAbuela.png"
+              src="/LaPailaAbuela.png"
               width="200"
               height="200px"
               alt="Restaurante Tipico La Paila de mi Abuela"
             ></Image>
             <Image
-              src="public/Frescura.png"
+              src="/Frescura.png"
               width="200"
               height="200px"
               alt="Freskura"
             ></Image>
             <Image
-              src="public/ElTablazo.jpeg"
+              src="/ElTablazo.jpeg"
               width="200"
               height="200px"
               alt="Restaurante el Tablazo"
@@ -376,7 +376,7 @@ function PageHome() {
               >
                 <Box>
                   <Image
-                    src="public/KitsAlimentos.jpg"
+                    src="/KitsAlimentos.jpg"
                     width="490"
                     height="290px"
                     alt="Restaurante el Tablazo"
@@ -432,7 +432,7 @@ function PageHome() {
                 >
                   <Box>
                     <Image
-                      src="public/Procuradora.jpg"
+                      src="/Procuradora.jpg"
                       width="400"
                       height="190px"
                       alt="Restaurante el Tablazo"
@@ -466,7 +466,7 @@ function PageHome() {
                 >
                   <Box>
                     <Image
-                      src="public/PAE.jpg"
+                      src="/PAE.jpg"
                       width="400"
                       height="190px"
                       alt="Restaurante el Tablazo"

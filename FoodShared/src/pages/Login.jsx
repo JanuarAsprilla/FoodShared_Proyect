@@ -11,8 +11,8 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 import Links from '../components/Link'
 
-import ver from '../assets/img/ver.png'
-import noVer from '../assets/img/noVer.png'
+import ver from 'public/ver.png'
+import noVer from 'public/noVer.png'
 
 const Login = () => {
   const [showPassword, togglePasswordVisibility] = usePasswordToggle()

@@ -49,7 +49,7 @@ const NavBar = () => {
       <Box display="flex" alignItems="center" height="50px" gap="5px">
         <Links to="/">
           <LogoImage
-            src="public/logo.jpeg"
+            src="/logo.jpeg"
             alt="logo FoodShared"
             width="50px"
             height="50px"

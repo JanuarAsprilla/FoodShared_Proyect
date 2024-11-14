@@ -65,7 +65,7 @@ function Footer() {
           >
             <Links to="/">
               <Image
-                src="public/logoSinNombre.jpeg"
+                src="/logoSinNombre.jpeg"
                 alt="logo FoodShared"
                 width="100px"
                 height="100px"
@@ -111,7 +111,7 @@ function Footer() {
           <Box display="grid" gridTemplateColumns="auto auto auto" gap="30px">
             <Links to={'www.facebook.com'}>
               <Image
-                src="public/facebook.png"
+                src="/facebook.png"
                 alt="logo facebook"
                 width="60px"
                 height="60px"
@@ -119,7 +119,7 @@ function Footer() {
             </Links>
             <Links to={'www.instagram.com'}>
               <Image
-                src="public/instagram.png"
+                src="/instagram.png"
                 alt="logo instagram"
                 width="60px"
                 height="60px"
@@ -127,7 +127,7 @@ function Footer() {
             </Links>
             <Links to={'www.youtube.com'}>
               <Image
-                src="public/youtube.png"
+                src="/youtube.png"
                 alt="logo Youtube"
                 width="60px"
                 height="60px"
@@ -137,19 +137,14 @@ function Footer() {
           <Box display="grid" gridTemplateColumns="auto auto" gap="30px">
             <Links to={'www.gmail.com'}>
               <Image
-                src="public/correoElectronico.png"
+                src="/correoElectronico.png"
                 alt="logo Gmail"
                 width="60px"
                 height="60px"
               />
             </Links>
             <Links to={'www.x.com'}>
-              <Image
-                src="public/X.png"
-                alt="logo X"
-                width="60px"
-                height="60px"
-              />
+              <Image src="/X.png" alt="logo X" width="60px" height="60px" />
             </Links>
           </Box>
         </Box>

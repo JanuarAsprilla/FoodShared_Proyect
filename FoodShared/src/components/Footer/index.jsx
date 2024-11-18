@@ -15,7 +15,7 @@ function Footer() {
       label: 'Donar Alimento',
     },
     {
-      to: '#',
+      to: '/Solicitar_Alimento',
       label: 'Solicitar Alimentos',
     },
     {

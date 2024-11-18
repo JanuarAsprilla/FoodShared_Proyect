@@ -11,34 +11,63 @@ import Label from '../components/Label'
 import Input from '../components/Input'
 import Button from '../components/Button'
 import Links from '../components/Link'
-import Textarea from '../components/Textarea'
 import Footer from '../components/Footer'
 import Select from '../components/Select'
 
-const DonateFood = () => {
+const RequestFood = () => {
   const [formData, setFormData] = useState({
+    foodType: '',
+    foodAmount: '',
+    priority: '',
+    date: '',
     username: '',
-    mail: '',
+    applicantType: '',
     number: '',
     address: '',
-    foodType: '',
-    date: '',
-    foodAmount: '',
-    method: '',
-    details: '',
+    mail: '',
   })
-  const DonateForm = [
+  const RequestForm = [
     {
-      nameLabel: 'Nombre del Donante',
-      htmlFor: 'username',
-      type: 'text',
-      placeholder: 'Nombre del Donante',
+      nameLabel: 'Tipo de alimento',
+      htmlFor: 'foodType',
+      type: 'select',
+      options: ['Alimentos Perecederos', 'Alimentos no Perecederos'],
     },
     {
-      nameLabel: 'Correo Electrónico',
-      htmlFor: 'mail',
+      nameLabel: 'Cantidad de alimento',
+      htmlFor: 'foodAmount',
+      type: 'number',
+      placeholder: 'Digite la cantidad',
+    },
+    {
+      nameLabel: 'Prioridad',
+      htmlFor: 'priority',
+      type: 'select',
+      options: ['leve', 'Urgente'],
+    },
+    {
+      nameLabel: 'Fecha de vencimiento',
+      htmlFor: 'date',
+      type: 'date',
+      placeholder: 'dd/mm/aaaa',
+    },
+    {
+      nameLabel: 'Nombre del Solicitante',
+      htmlFor: 'username',
       type: 'text',
-      placeholder: 'Ingresar Correo Electrónico',
+      placeholder: 'Ingrese su nombre',
+    },
+    {
+      nameLabel: 'Tipo de Solicitante',
+      htmlFor: 'applicantType',
+      type: 'select',
+      options: [
+        'Persona natural',
+        'Persona juridica',
+        'Banco de alimentos',
+        'Comedor',
+        'Otros',
+      ],
     },
     {
       nameLabel: 'Número de Teléfono',
@@ -53,47 +82,17 @@ const DonateFood = () => {
       placeholder: 'Ingresar Direccion',
     },
     {
-      nameLabel: 'Tipo de alimento',
-      htmlFor: 'foodType',
-      type: 'select',
-      options: ['Alimentos Perecederos', 'Alimentos no Perecederos'],
-    },
-    {
-      nameLabel: 'Fecha de donacion',
-      htmlFor: 'date',
-      type: 'date',
-      placeholder: 'dd/mm/aaaa',
-    },
-    {
-      nameLabel: 'Cantidad de alimento',
-      htmlFor: 'foodAmount',
-      type: 'number',
-      placeholder: 'Ingrese la cantidad de alimento',
-    },
-    {
-      nameLabel: 'Metodo de entrega',
-      htmlFor: 'method',
-      type: 'select',
-      options: ['Puntos de recolección de FoodShared', 'Domicilio'],
-    },
-    {
-      nameLabel: 'Fecha de Vencimiento',
-      htmlFor: 'date',
-      type: 'date',
-      placeholder: 'dd/mm/aaaa',
-    },
-    {
-      nameLabel: 'Detalles Adicionales',
-      htmlFor: 'details',
-      type: 'textarea',
-      placeholder: 'Comentarios',
+      nameLabel: 'Correo Electrónico',
+      htmlFor: 'mail',
+      type: 'text',
+      placeholder: 'Ingresar Correo Electrónico',
     },
   ]
 
   const navigate = useNavigate()
 
   const handleRedirect = () => {
-    alert('Donacion Registrada Correctamente')
+    alert('Solicitud Registrada Correctamente')
     navigate('/')
   }
   const handleChange = (e) => {
@@ -101,7 +100,7 @@ const DonateFood = () => {
     setFormData({ ...formData, [name]: value })
   }
 
-  const donateOptions = DonateForm.map((dates) => {
+  const donateOptions = RequestForm.map((dates) => {
     if (dates.options) {
       return {
         ...dates,
@@ -118,7 +117,7 @@ const DonateFood = () => {
     return dates
   })
 
-  const renderDonateForm = (
+  const renderRequestForm = (
     <Form>
       <Box
         display="grid"
@@ -179,37 +178,6 @@ const DonateFood = () => {
         ))}
       </Box>
 
-      {donateOptions.map((dates, index) => (
-        <Box key={index} margin="40px 0">
-          {dates.type === 'textarea' ? (
-            <Box width="98%">
-              <Box>
-                <Label
-                  htmlFor={dates.htmlFor}
-                  fontSize="18px"
-                  fontWeight="bold"
-                  color="#000000"
-                >
-                  {dates.nameLabel}
-                </Label>
-              </Box>
-              <Box>
-                <Textarea
-                  type={dates.type}
-                  id={dates.htmlFor}
-                  placeholder={dates.placeholder}
-                  outline="none"
-                  padding="10px 10px"
-                  border="1px solid black"
-                  height="150px"
-                  fontSize="16px"
-                />
-              </Box>
-            </Box>
-          ) : null}
-        </Box>
-      ))}
-
       <Box margin="25px 0" display="flex" justifyContent="center" gap="20px">
         <Button
           backgroundColor="#4B8B00"
@@ -240,7 +208,7 @@ const DonateFood = () => {
   return (
     <>
       <Helmet>
-        <title>Donar Alimento</title>
+        <title>Solicitar Alimentos</title>
       </Helmet>
       <Navbar />
       <Box
@@ -262,11 +230,11 @@ const DonateFood = () => {
         </Box>
         <Box margin=" 25px 0 10px 0">
           <Heading level={1} color="#4B8B00" textAlign="center">
-            Donar Alimento
+            Socilitar Alimentos
           </Heading>
         </Box>
         <Box width="85%" margin="0 auto">
-          {renderDonateForm}
+          {renderRequestForm}
         </Box>
       </Box>
       <Footer />
@@ -274,4 +242,4 @@ const DonateFood = () => {
   )
 }
 
-export default DonateFood
+export default RequestFood

@@ -9,6 +9,7 @@ import TypeRegister from '../pages/typeRegister'
 import RegisterUsuarme from '../pages/RegisterUsuarme'
 import RegisterCompay from '../pages/RegisterCompany'
 import DonateFood from '../pages/DonateFood'
+import RequestFood from '../pages/RequestFood'
 
 const RoutesApp = () => {
   return (
@@ -23,6 +24,7 @@ const RoutesApp = () => {
         <Route path="/Registro_Persona" element={<RegisterUsuarme />} />
         <Route path="/Registro_Empresa" element={<RegisterCompay />} />
         <Route path="/Donar_Alimento" element={<DonateFood />} />
+        <Route path="/Solicitar_Alimento" element={<RequestFood />} />
       </Routes>
     </Router>
   )

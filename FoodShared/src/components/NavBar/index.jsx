@@ -6,7 +6,7 @@ const NavBar = () => {
   const navLinks = [
     { to: '/', label: 'Inicio' },
     { to: '/Donar_Alimento', label: 'Donar Alimento' },
-    { to: '#', label: 'Solicitar Alimentos' },
+    { to: '/Solicitar_Alimento', label: 'Solicitar Alimentos' },
     { to: '/Sobre_Nosotros', label: 'Sobre Nosotros' },
     { to: '/contactanos', label: 'Contactanos' },
   ]

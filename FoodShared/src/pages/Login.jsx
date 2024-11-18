@@ -147,7 +147,7 @@ const Login = () => {
                     Iniciar Sesion
                   </Button>
                 </Links>
-                <Links to="/Tipo_Registro">
+                <Links to="/">
                   <Button
                     type="submit"
                     backgroundColor="#4B8B00"

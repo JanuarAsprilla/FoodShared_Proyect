@@ -29,6 +29,7 @@ const Contacts = () => {
             alt="logo FoodShared"
             width="450px"
             height="400px"
+            objectFit="contain"
           />
         </Box>
         <Box>

@@ -9,6 +9,43 @@ import Link from '../components/Link'
 import Footer from '../components/Footer'
 import Links from '../components/Link'
 function PageHome() {
+  const ImgRestaurants = [
+    { src: '/ShairaRestaurante.jpeg', alt: 'Shaira Restaurante' },
+    {
+      src: '/LaPailaAbuela.png',
+      alt: 'Restaurante Tipico La Paila de mi Abuela',
+    },
+    {
+      src: '/Frescura.png',
+      alt: 'Freskura',
+    },
+    {
+      src: '/ElTablazo.jpeg',
+      alt: 'Restaurante el Tablazo',
+    },
+  ]
+
+  const renderImgRestaurants = (
+    <Box
+      display="grid"
+      gridTemplateColumns="repeat(4, 1fr)"
+      borderBottom="1px solid gray"
+      padding="0 10px 40px 10px"
+    >
+      {ImgRestaurants.map((dates, index) => (
+        <Box key={index}>
+          <Image
+            src={dates.src}
+            width="200px"
+            height="200px"
+            objectFit="contain"
+            alt={dates.alt}
+          />
+        </Box>
+      ))}
+    </Box>
+  )
+
   return (
     <>
       <Helmet>
@@ -20,16 +57,18 @@ function PageHome() {
           backgroundColor="#d6d2be"
           display="grid"
           gridTemplateColumns="auto auto"
-          justifyContent="center"
           gap=" 60px"
           padding=" 20px 10px"
         >
-          <Image
-            src="/logo-removebg-preview.png"
-            alt="logo FoodShared"
-            width="450px"
-            height="400px"
-          />
+          <Box margin="0 auto ">
+            <Image
+              src="/logo-removebg-preview.png"
+              alt="logo FoodShared"
+              width="450px"
+              height="400px"
+              objectFit="contain"
+            />
+          </Box>
 
           <Box
             boxShadow="0px 5px 50px rgba(0, 0, 0, 0.3)"
@@ -311,37 +350,7 @@ function PageHome() {
               backgroundColor="#ce8600"
               borderRadius="20px"
             ></Box>
-          </Box>
-          <Box
-            display="grid"
-            gridTemplateColumns="repeat(4, 1fr)"
-            borderBottom="1px solid gray"
-            padding="0 10px 40px 10px"
-          >
-            <Image
-              src="/ShairaRestaurante.jpeg"
-              width="200"
-              height="200px"
-              alt="2"
-            ></Image>
-            <Image
-              src="/LaPailaAbuela.png"
-              width="200"
-              height="200px"
-              alt="Restaurante Tipico La Paila de mi Abuela"
-            ></Image>
-            <Image
-              src="/Frescura.png"
-              width="200"
-              height="200px"
-              alt="Freskura"
-            ></Image>
-            <Image
-              src="/ElTablazo.jpeg"
-              width="200"
-              height="200px"
-              alt="Restaurante el Tablazo"
-            ></Image>
+            {renderImgRestaurants}
           </Box>
           <Box margin="50px 5px">
             <Box display="grid" gridTemplateRows="auto auto">
@@ -379,7 +388,8 @@ function PageHome() {
                     src="/KitsAlimentos.jpg"
                     width="490"
                     height="290px"
-                    alt="Restaurante el Tablazo"
+                    objectFit="cover"
+                    alt="Niños recibiendo kits de alimentos"
                   />
                 </Box>
                 <Box>
@@ -435,7 +445,8 @@ function PageHome() {
                       src="/Procuradora.jpg"
                       width="400"
                       height="190px"
-                      alt="Restaurante el Tablazo"
+                      objectFit="cover"
+                      alt="Margarita Cabello Blanco, Procuradura General de la Nación"
                     />
                   </Box>
                   <Heading level={2}>
@@ -469,7 +480,8 @@ function PageHome() {
                       src="/PAE.jpg"
                       width="400"
                       height="190px"
-                      alt="Restaurante el Tablazo"
+                      objectFit="cover"
+                      alt="PAE escolar"
                     />
                   </Box>
                   <Heading level={2}>

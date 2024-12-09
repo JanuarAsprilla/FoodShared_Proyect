@@ -166,6 +166,7 @@ const RegisterCompay = () => {
                 alt="logo FoodShared"
                 width="150px"
                 height="150px"
+                objectFit="contain"
               />
             </Links>
           </Box>

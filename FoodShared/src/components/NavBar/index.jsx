@@ -1,6 +1,6 @@
 import Box from '../Box'
 import Links from '../Link'
-import LogoImage from '../ImageComponent'
+import Image from '../ImageComponent'
 
 const NavBar = () => {
   const navLinks = [
@@ -48,12 +48,13 @@ const NavBar = () => {
     >
       <Box display="flex" alignItems="center" height="50px" gap="5px">
         <Links to="/">
-          <LogoImage
+          <Image
             src="/logo.jpeg"
             alt="logo FoodShared"
             width="50px"
             height="50px"
             borderRadius="50%"
+            objectFit="contain"
           />
         </Links>
         <Links

@@ -257,6 +257,7 @@ const DonateFood = () => {
               alt="logo FoodShared"
               width="450px"
               height="450px"
+              objectFit="contain"
             />
           </Links>
         </Box>
